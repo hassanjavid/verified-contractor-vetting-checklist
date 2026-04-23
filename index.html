@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Third-party research: how to choose a verified contractor. Complete vetting checklist with licensing, insurance, bonding, quotes, contract and red flags.">
+  <title>How to Choose a Verified Contractor | Complete Vetting Checklist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f6fafd;
+      color: #1c2e3a;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* Hero header with image */
+    .hero-header {
+      position: relative;
+      background: linear-gradient(105deg, #0a2e3f 0%, #1f5c75 100%);
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-text {
+      flex: 1.2;
+    }
+
+    .hero-text h1 {
+      font-size: 2.7rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      max-width: 90%;
+    }
+
+    .hero-image {
+      flex: 0.9;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 1.5rem;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.25);
+      object-fit: cover;
+      transition: transform 0.25s ease;
+    }
+
+    .hero-image img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Main grid: left sidebar TOC + content */
+    .page-grid {
+      max-width: 1400px;
+      margin: 2rem auto 3rem;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2.5rem;
+    }
+
+    /* Left TOC - beautiful card */
+    .toc-card {
+      position: sticky;
+      top: 2rem;
+      align-self: start;
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+      padding: 1.6rem 1.2rem;
+      border: 1px solid #e2edf2;
+      transition: all 0.2s;
+    }
+
+    .toc-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1.3rem;
+      color: #154e66;
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 0.6rem 0.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #2b5c74;
+      text-decoration: none;
+      border-radius: 0.8rem;
+      transition: all 0.2s ease;
+      background: transparent;
+      border-left: 2px solid transparent;
+    }
+
+    .toc-link:hover {
+      background: #eaf3f8;
+      color: #0b5777;
+      transform: translateX(4px);
+      border-left-color: #2c7da0;
+    }
+
+    .toc-link.active {
+      background: #e3f0f5;
+      color: #0f5b78;
+      font-weight: 600;
+      border-left-color: #2c7da0;
+    }
+
+    /* Main content card */
+    .main-article {
+      background: white;
+      border-radius: 1.75rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+      padding: 2.2rem 2.4rem;
+      border: 1px solid #eaf1f5;
+    }
+
+    .main-article h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid #d4e6ef;
+      color: #1f5e7a;
+      scroll-margin-top: 90px;
+    }
+
+    .main-article h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .main-article h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin: 1.3rem 0 0.6rem;
+      color: #287a9a;
+    }
+
+    .main-article p {
+      margin-bottom: 1rem;
+      color: #1f3e4e;
+    }
+
+    .checklist-box {
+      background: #fafefd;
+      border-left: 4px solid #2c7da0;
+      padding: 0.8rem 1.2rem;
+      margin: 1.2rem 0;
+      border-radius: 0.8rem;
+    }
+
+    ul, .styled-list {
+      padding-left: 1.5rem;
+      margin: 0.8rem 0;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    /* Table styling */
+    .redflags-table-wrapper {
+      overflow-x: auto;
+      margin: 1.8rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    th {
+      background: #e6f2f7;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: #165d78;
+      border-bottom: 1px solid #cfdfe8;
+      text-align: left;
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #ecf3f7;
+      vertical-align: top;
+    }
+
+    .final-note {
+      background: #edf6fa;
+      padding: 1.4rem 1.8rem;
+      border-radius: 1.2rem;
+      margin: 1.8rem 0;
+      border-left: 6px solid #2c7da0;
+    }
+
+    .inline-img {
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .inline-img img {
+      max-width: 100%;
+      border-radius: 1.25rem;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+    }
+
+    .faq-item {
+      margin: 1.5rem 0;
+      border-bottom: 1px solid #e3eef3;
+      padding-bottom: 1rem;
+    }
+
+    .faq-question {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #1f5e7a;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #1f6c8a;
+      color: white;
+      border: none;
+      border-radius: 40px;
+      padding: 0.7rem 1.3rem;
+      cursor: pointer;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s;
+      z-index: 100;
+      font-size: 0.9rem;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1.5rem 0 0.5rem;
+      font-size: 0.8rem;
+      color: #6f8fa0;
+      border-top: 1px solid #e2edf2;
+    }
+
+    @media (max-width: 950px) {
+      .page-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1.2rem;
+      }
+      .toc-card {
+        position: relative;
+        top: 0;
+        width: 100%;
+        overflow-x: auto;
+        padding: 1rem;
+      }
+      .toc-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .toc-link {
+        white-space: nowrap;
+        padding: 0.4rem 1rem;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+      }
+      .toc-link.active {
+        border-left-color: transparent;
+        border-bottom-color: #2c7da0;
+        background: #e3f0f5;
+      }
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+      .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1.5rem;
+      }
+      .hero-text p {
+        max-width: 100%;
+      }
+      .main-article {
+        padding: 1.5rem;
+      }
+      .main-article h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .hero-text h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Eyecatching header with image -->
+<div class="hero-header">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>How to Choose a Verified Contractor: A Complete Vetting Checklist</h1>
+      <p>Licensing, insurance, bonding, complaints, quotes & contracts – expert third‑party guidance to protect your home and budget.</p>
+    </div>
+    <div class="hero-image">
+      <img src="contractor.png" alt="Professional contractor reviewing blueprint on construction site" loading="eager">
+    </div>
+  </div>
+</div>
+
+<div class="page-grid">
+  <!-- Left side Table of Contents -->
+  <aside class="toc-card">
+    <h3>📋 Contents</h3>
+    <nav class="toc-nav" id="tocNav">
+      <a href="#step1" class="toc-link">Step 1: Verify Licensing</a>
+      <a href="#step2" class="toc-link">Step 2: Confirm Insurance</a>
+      <a href="#step3" class="toc-link">Step 3: Check Bonding</a>
+      <a href="#step4" class="toc-link">Step 4: Complaint History (BBB)</a>
+      <a href="#step5" class="toc-link">Step 5: Compare Written Quotes</a>
+      <a href="#step6" class="toc-link">Step 6: Written Contract</a>
+      <a href="#redflags" class="toc-link">🚩 10 Red Flags</a>
+      <a href="#finalthought" class="toc-link">Final Thought</a>
+      <a href="#faq" class="toc-link">FAQ (5 Questions)</a>
+    </nav>
+  </aside>
+
+  <!-- Main Blog Content -->
+  <main class="main-article">
+    <p>Hiring a contractor for a home improvement project is one of the most consequential financial decisions a homeowner can make. According to recent survey data, more than half (52%) of American homeowners have a renovation project planned, with median budgets hovering around $15,000. Yet home improvement fraud remains one of the most common consumer complaints filed with the Federal Trade Commission (FTC), frequently involving unlicensed or uninsured contractors.</p>
+
+    <p>This disconnect between homeowner investment and contractor reliability underscores a simple truth: finding a verified contractor is not a luxury - it is a financial necessity. A verified contractor offers documented proof of licensing, insurance, bonding, and a track record of satisfied customers. Without such verification, homeowners risk shoddy workmanship, safety violations, budget overruns, and even legal liability.</p>
+
+    <p>This comprehensive vetting checklist draws on guidance from the Federal Trade Commission (FTC), the Better Business Bureau (BBB), state licensing boards, and industry organizations to help you identify and hire a verified contractor you can trust.</p>
+
+    <!-- Step 1 -->
+    <h2 id="step1">Step 1: Verify Licensing with Your State Licensing Board</h2>
+    <p>The cornerstone of any <a href="https://contractorslist.com/"> <b>verified contractor evaluation</b></a>  is a valid, active state license. Licensing requirements vary by state, but a legitimate contractor working on projects above a certain dollar threshold must typically hold a license appropriate to the scope of work.</p>
+    <div class="checklist-box">
+      <strong>How to verify:</strong>
+      <ul>
+        <li>Ask the contractor for their license number and full business name exactly as registered</li>
+        <li>Search your state's official licensing database online - most states provide free public access through portals like Arkansas.gov, Oklahoma.gov, or the California Contractors State License Board (CSLB)</li>
+        <li>Confirm the license is "Active" and covers the specific type of work you need (e.g., a "Limited" license may only cover projects up to a certain dollar amount)</li>
+        <li>Verify that the business name on the license matches the name on the contract</li>
+      </ul>
+    </div>
+    <p>The FTC advises homeowners to search contractors' company names alongside terms like "complaint" or "scam" to uncover any negative history. A verified contractor will have a clean licensing record and will not hesitate to provide this information.</p>
+
+    <!-- Step 2 -->
+    <h2 id="step2">Step 2: Confirm Insurance Coverage for Liability and Workers' Compensation</h2>
+    <p>Insurance verification is non-negotiable. Without proper coverage, the homeowner may be held financially responsible for accidents, injuries, or property damage that occur during the project. The FTC recommends that contractors carry personal liability, workers' compensation, and property damage coverage.</p>
+    <div class="checklist-box">
+      <strong>How to verify:</strong>
+      <ul>
+        <li>Request a Certificate of Insurance (COI) directly from the contractor</li>
+        <li>The COI should show General Liability Insurance (to cover damage to your home) and Workers' Compensation Insurance (to cover the contractor's crew)</li>
+        <li>Call the insurance carrier listed on the certificate to confirm the policy is active and matches the contractor's legal business entity</li>
+        <li>A verified contractor will have no issue with you contacting their insurer directly</li>
+      </ul>
+    </div>
+    <p>Industry standards suggest general liability coverage of at least $1 million per occurrence for residential projects. If the contractor uses subcontractors, ask for proof that those subcontractors are also properly insured.</p>
+
+    <!-- Step 3 -->
+    <h2 id="step3">Step 3: Check for Bonding to Protect Against Incomplete Work</h2>
+    <p>A surety bond is an additional layer of protection that many homeowners overlook. A bond ensures that if the contractor fails to complete the job, fails to pay for permits, or violates licensing laws, the bonding company may compensate the homeowner up to the bond amount.</p>
+    <div class="checklist-box">
+      <strong>What to look for:</strong>
+      <ul>
+        <li>Ask the contractor if they are bonded and for what amount</li>
+        <li>Verify the bond with the surety company that issued it</li>
+        <li>Understand that bond requirements vary by state and project type - some states require specific bonds for certain contractor classifications</li>
+      </ul>
+    </div>
+    <p>A truly verified contractor typically carries bonding as part of their professional credentials. While a bond does not guarantee quality work, it provides a financial backstop if the contractor abandons the project.</p>
+
+    <!-- Step 4 -->
+    <h2 id="step4">Step 4: Investigate Complaint History Through the BBB and Other Platforms</h2>
+    <p>Online reviews are helpful but should never be the sole basis for hiring. Fake and incentivized reviews have become increasingly common, which is why the Better Business Bureau (BBB) consistently advises homeowners to verify a contractor's complaint history, not just their star rating.</p>
+    <div class="checklist-box">
+      <strong>Research steps:</strong>
+      <ul>
+        <li>Look up the contractor on BBB.org to see verified reviews, complaint history, BBB ratings, and how the business resolves disputes</li>
+        <li>Check Google Business Profile for a high volume of reviews over a sustained period - beware of a sudden burst of five-star reviews all within the same week</li>
+        <li>Cross-reference specialized review platforms like Angi, Houzz, and Yelp</li>
+        <li>Read complaints carefully: a verified contractor will have few unresolved complaints and a history of responding professionally to issues</li>
+      </ul>
+    </div>
+    <p>The BBB also advises caution if a company is difficult to communicate with or demands full payment upfront - both are red flags that should disqualify a candidate.</p>
+
+    <!-- Step 5 -->
+    <h2 id="step5">Step 5: Obtain and Compare Multiple Written Quotes</h2>
+    <p>The FTC recommends getting written estimates from several firms and advises against automatically choosing the lowest bidder. The BBB suggests obtaining at least three apples-to-apples quotes based on the same specifications, materials, labor, and time factors.</p>
+    <div class="checklist-box">
+      <strong>How to evaluate quotes:</strong>
+      <ul>
+        <li>Ensure each quote includes a detailed scope of work, materials list, timeline, and payment schedule</li>
+        <li>Compare quotes based on the same requirements - do not compare a comprehensive bid to a bare-bones estimate</li>
+        <li>Be wary of bids that are significantly lower than others, as extremely low bids may indicate cutting corners, subpar materials, or hidden costs that will surface later</li>
+        <li>A verified contractor will provide transparency in pricing and a clear, written breakdown of all costs</li>
+      </ul>
+    </div>
+    <p>The National Association of the Remodeling Industry advises making sure you are comparing "apples to apples" and considering factors like quality, timeline, and scope alongside price.</p>
+
+    <!-- Step 6 -->
+    <h2 id="step6">Step 6: Demand a Written Contract with Key Protections</h2>
+    <p>Never permit work to start without a written contract. The BBB warns that a lack of written agreement is a major red flag. A proper contract protects both parties and should include:</p>
+    <div class="checklist-box">
+      <strong>Essential contract elements:</strong>
+      <ul>
+        <li>Detailed scope of work describing exactly what will be done</li>
+        <li>Start and completion dates for each phase of the project</li>
+        <li>Exact costs, including materials, labor, permits, and any contingencies</li>
+        <li>Payment schedule that ties payments to completed work milestones, not arbitrary dates</li>
+        <li>Warranty information covering both materials and workmanship</li>
+        <li>Responsibility for obtaining permits and scheduling inspections</li>
+        <li>A clause stating all changes must be in writing and signed by both parties before work proceeds</li>
+      </ul>
+    </div>
+    <p>The Consumer Financial Protection Bureau (CFPB) also warns against large upfront payments. Experts recommend limiting deposits to less than 10-30 percent, staggering payments according to work stages, and withholding the final payment until the job is fully completed and all liens are released.</p>
+
+    <!-- Image inside content (second image) -->
+    <div class="inline-img">
+      <img src="verified contractors.png" alt="Homeowner reviewing contract papers with contractor" loading="lazy">
+    </div>
+
+    <!-- 10 Red Flags -->
+    <h2 id="redflags">10 Red Flags That Indicate a Contractor Is NOT Verified</h2>
+    <p>Throughout the vetting process, certain warning signs should immediately disqualify a candidate. The FTC, BBB, and consumer protection agencies consistently highlight the following red flags:</p>
+    <div class="redflags-table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Red Flag</th><th>Why It Matters</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Door-to-door solicitation, especially after storms or disasters</td><td>Reputable contractors do not need to canvas neighborhoods for work</td></tr>
+          <tr><td>Refusal or inability to provide proof of license and insurance</td><td>A verified contractor always carries documentation and shares it willingly</td></tr>
+          <tr><td>Demanding large upfront payments (over 15-30%) or cash only</td><td>Legitimate contractors work on milestone-based payment schedules</td></tr>
+          <tr><td>No written contract or only a vague one-page "estimate"</td><td>Verbal agreements offer no legal protection</td></tr>
+          <tr><td>Unusually low bid compared to other quotes</td><td>Often signals corner-cutting, cheap materials, or hidden change orders</td></tr>
+          <tr><td>High-pressure sales tactics or "today only" discounts</td><td>Pressuring homeowners to act quickly is a classic scam technique</td></tr>
+          <tr><td>Out-of-state address or no permanent place of business</td><td>Makes it difficult to pursue legal action if problems arise</td></tr>
+          <tr><td>Reluctance to provide recent references or a portfolio of similar work</td><td>A verified contractor has a track record they are proud to share</td></tr>
+          <tr><td>Suggests the homeowner pull permits themselves</td><td>Permits should be obtained by the licensed contractor performing the work</td></tr>
+          <tr><td>Poor communication, missed appointments, or messy job sites during walkthrough</td><td>Unprofessional behavior during the sales process predicts worse behavior during the project</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Final Thought -->
+    <h2 id="finalthought">Final Thought</h2>
+    <div class="final-note">
+      <p>Choosing a verified contractor requires time, patience, and a commitment to thorough research. The initial effort of verifying licenses, insurance, bonding, and references can save homeowners thousands of dollars and months of frustration. As one homeowner who lived through a renovation nightmare puts it: "The foundation for a successful outcome is vetting to ensure you hire an ethical, competent contractor". Taking the steps outlined in this checklist transforms a potentially risky transaction into a protected investment - and ensures the person working on your home is a verified contractor you can trust.</p>
+    </div>
+
+    <!-- FAQ Section -->
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-question">Q1: What is the difference between a licensed contractor and a verified contractor?</div>
+      <p>A licensed contractor has met the minimum legal requirements to perform certain types of work in a specific state. A verified contractor goes beyond licensing by also confirming valid insurance, bonding, a clean complaint history with the BBB, positive references from recent clients, and appropriate licensing for the specific project at hand.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q2: How many contractors should I interview before making a decision?</div>
+      <p>Industry experts recommend scheduling in-person interviews with at least three contractors who specialize in the type of work you need. The FTC suggests obtaining written estimates from several firms, comparing them side by side before making a final selection.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q3: Is it safe to hire a contractor who does not require a deposit?</div>
+      <p>Some reputable contractors do work on a "pay as you go" basis with no deposit, but this is not universal. What matters is the structure of payments - not whether a deposit exists. A verified contractor will never demand large upfront payments. Stagger payments according to work completion and never pay the full balance until the job is finished and you have inspected the work.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q4: Can I verify a contractor's license and insurance myself for free?</div>
+      <p>Yes. Every state provides free public access to contractor licensing databases through official government websites. You can also request a Certificate of Insurance directly from the contractor and call the insurance carrier to verify coverage. The BBB offers free business profiles that include complaint history and ratings. These verification steps cost nothing but time and provide essential protection.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q5: What should I do if I suspect I have hired an unverified contractor?</div>
+      <p>Stop all work immediately if you have serious concerns about licensing or insurance. Verify the contractor's credentials through your state licensing board - if they are unlicensed, they are likely operating illegally. Document all communications, payments, and work performed. Contact your state's attorney general office and file a complaint with the BBB. In cases of fraud or abandonment, consult a qualified attorney to explore legal options.</p>
+    </div>
+
+    <footer>
+      <p>© 2025 independent consumer guide – based on FTC, BBB, state licensing boards, and industry organizations. No brand affiliation.</p>
+    </footer>
+  </main>
+</div>
+
+<button class="back-to-top" id="backToTopBtn">↑ Back to top</button>
+
+<script>
+  // Smooth scroll for TOC links & active state tracking
+  const tocLinks = document.querySelectorAll('.toc-link');
+  const sections = Array.from(tocLinks).map(link => {
+    const id = link.getAttribute('href');
+    return id ? document.querySelector(id) : null;
+  }).filter(section => section !== null);
+
+  function updateActiveToc() {
+    let current = -1;
+    const scrollPos = window.scrollY + 100;
+    for (let i = 0; i < sections.length; i++) {
+      const section = sections[i];
+      if (section) {
+        const offsetTop = section.offsetTop;
+        const offsetBottom = offsetTop + section.offsetHeight;
+        if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+          current = i;
+          break;
+        }
+      }
+    }
+    if (current === -1 && (window.innerHeight + window.scrollY) >= document.body.scrollHeight - 80) {
+      current = sections.length - 1;
+    }
+    tocLinks.forEach((link, idx) => {
+      if (idx === current) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  function scrollToTarget(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetEl = document.querySelector(targetId);
+    if (targetEl) {
+      const offset = 80;
+      const y = targetEl.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
+
+  tocLinks.forEach(link => {
+    link.addEventListener('click', scrollToTarget);
+  });
+
+  window.addEventListener('scroll', updateActiveToc);
+  window.addEventListener('load', updateActiveToc);
+  updateActiveToc();
+
+  // Back to top button
+  const backBtn = document.getElementById('backToTopBtn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 550) {
+      backBtn.classList.add('show');
+    } else {
+      backBtn.classList.remove('show');
+    }
+  });
+  backBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
